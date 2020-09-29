@@ -36,7 +36,6 @@ public class UserValidation {
 		System.out.println("Enter your email");
 	    s=new Scanner(System.in);
 		String email = s.nextLine();
-		s.close();
 		if(j.emailCheck(email)) 
 		{
 			System.out.println("email is valid");
@@ -46,6 +45,20 @@ public class UserValidation {
 			System.out.println("email is not valid");
 			return;
 		}
+		
+		System.out.println("Enter your phone number");
+	    s=new Scanner(System.in);
+		String phone = s.nextLine();
+		if(j.phoneCheck(phone)) 
+		{
+			System.out.println("phone number is valid");
+		}
+		else 
+		{
+			System.out.println("phone number is not valid");
+			return;
+		}
+		s.close();
 	}
 
 }

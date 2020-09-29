@@ -17,5 +17,13 @@ public class JavaRegex {
 		Pattern pattern = Pattern.compile(valid);
 		return pattern.matcher(email).matches();
 	}
+	
+	public boolean phoneCheck(String mobile)
+	{
+		String valid = new String("[0-9]{2}( [0-9]{10})");
+		Pattern pattern = Pattern.compile(valid);
+		return pattern.matcher(mobile).matches();
+				
+	}
 
 }
