@@ -28,7 +28,7 @@ public class JavaRegex {
 	
 	public boolean passwordCheck(String password)
 	{
-		String valid = new String("(?=.*[A-Z])[a-zA-Z0-9]{7,}");
+		String valid = new String("(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{7,}");
 		Pattern pattern = Pattern.compile(valid);
 		return pattern.matcher(password).matches();
 	}
