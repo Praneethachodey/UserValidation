@@ -10,12 +10,12 @@ public class JavaRegex {
 		return pattern.matcher(firstName).matches();
 	}
 	
-//	public boolean emailCheck(String email)
-//	{
-//		//String valid = new String("^[\\w-\\+]+(\\.[\\w]+)*@[\\w-]{2,})?(\\.[a-z]{2,})?$");
-//		String valid = new String("^[a-zA-Z0-9\\-_]+([\\.+_-][a-zA-Z0-9]+)?@([a-zA-Z0-9]+)\\.([a-z0-9]{2,})(\\.[a-z]{2})?$");
-//		Pattern pattern = Pattern.compile(valid);
-//		return pattern.matcher(email).matches();
-//	}
+	public boolean emailCheck(String email)
+	{
+		//String valid = new String("^[\\w-\\+]+(\\.[\\w]+)*@[\\w-]{2,})?(\\.[a-z]{2,})?$");
+		String valid = new String("^[a-zA-Z0-9\\-_]+([\\.+_-][a-zA-Z0-9]+)?@([a-zA-Z0-9]+)\\.([a-z0-9]{2,})(\\.[a-z]{2})?$");
+		Pattern pattern = Pattern.compile(valid);
+		return pattern.matcher(email).matches();
+	}
 
 }

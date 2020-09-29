@@ -33,19 +33,19 @@ public class UserValidation {
 			return;
 		}
 		
-//		System.out.println("Enter your email");
-//	    s=new Scanner(System.in);
-//		String email = s.nextLine();
-//		s.close();
-//		if(j.emailCheck(email)) 
-//		{
-//			System.out.println("email is valid");
-//		}
-//		else 
-//		{
-//			System.out.println("email is not valid");
-//			return;
-//		}
+		System.out.println("Enter your email");
+	    s=new Scanner(System.in);
+		String email = s.nextLine();
+		s.close();
+		if(j.emailCheck(email)) 
+		{
+			System.out.println("email is valid");
+		}
+		else 
+		{
+			System.out.println("email is not valid");
+			return;
+		}
 	}
 
 }
