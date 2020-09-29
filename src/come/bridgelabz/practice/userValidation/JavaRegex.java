@@ -28,9 +28,11 @@ public class JavaRegex {
 	
 	public boolean passwordCheck(String password)
 	{
-		String valid = new String("(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{7,}");
+		String valid = new String("(?=.*[A-Z])(?=.*[0-9]).{8,}");
+		String valid1= new String("[a-z0-9A-Z]*[$&@#][a-z0-9A-Z]*");
 		Pattern pattern = Pattern.compile(valid);
-		return pattern.matcher(password).matches();
+		Pattern pattern1 = Pattern.compile(valid1);
+		return pattern.matcher(password).matches()&&pattern1.matcher(password).matches();
 	}
 
 }
