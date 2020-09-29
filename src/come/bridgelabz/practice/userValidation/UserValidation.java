@@ -58,6 +58,20 @@ public class UserValidation {
 			System.out.println("phone number is not valid");
 			return;
 		}
+		
+		System.out.println("Enter your password");
+	    s=new Scanner(System.in);
+		String password = s.nextLine();
+		if(j.passwordCheck(password)) 
+		{
+			System.out.println("password is valid");
+		}
+		else 
+		{
+			System.out.println("password is not valid");
+			return;
+		}
+		
 		s.close();
 	}
 

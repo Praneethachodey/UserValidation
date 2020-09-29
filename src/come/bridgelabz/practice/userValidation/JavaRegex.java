@@ -25,5 +25,12 @@ public class JavaRegex {
 		return pattern.matcher(mobile).matches();
 				
 	}
+	
+	public boolean passwordCheck(String password)
+	{
+		String valid = new String("[a-z]{8,}");
+		Pattern pattern = Pattern.compile(valid);
+		return pattern.matcher(password).matches();
+	}
 
 }
